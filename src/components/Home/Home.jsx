@@ -158,10 +158,10 @@ const Home = ({tickets, selectedGrouping, selectedOrdering, users}) => {
         <div className="group-column">
             <div className='group-header'>
             <div className='group-header-title'>
-            <p className="author" style={{backgroundColor: 'green'}}>
+            <div className="author" style={{backgroundColor: 'green'}}>
               {users?getInitials(users.find(user=>user.id==='usr-1')?.name):'U'}
               <div className='availability' style={{backgroundColor: users && users.find(user=>user.id==='usr-1')?.available ? 'green' : 'gray',}}></div>
-            </p>
+            </div>
             <h5>{users.find(user=>user.id==='usr-1')?.name}   {orderedTickets['usr-1']?.length}</h5>
             </div>
             <div >
@@ -178,10 +178,10 @@ const Home = ({tickets, selectedGrouping, selectedOrdering, users}) => {
           <div className="group-column">
           <div className='group-header'>
             <div className='group-header-title'>
-            <p className="author" style={{backgroundColor: 'brown'}}>
+            <div className="author" style={{backgroundColor: 'brown'}}>
               {users?getInitials(users.find(user=>user.id==='usr-2')?.name):'U'}
               <div className='availability' style={{backgroundColor: users && users.find(user=>user.id==='usr-2')?.available ? 'green' : 'gray',}}></div>
-            </p>
+            </div>
             <h5>{users.find(user=>user.id==='usr-2')?.name}   {orderedTickets['usr-2']?.length}</h5>
             </div>
             <div >
@@ -198,10 +198,10 @@ const Home = ({tickets, selectedGrouping, selectedOrdering, users}) => {
           <div className="group-column">
           <div className='group-header'>
             <div className='group-header-title'>
-            <p className="author" style={{backgroundColor: 'blue'}}>
+            <div className="author" style={{backgroundColor: 'blue'}}>
               {users?getInitials(users.find(user=>user.id==='usr-3')?.name):'U'}
               <div className='availability' style={{backgroundColor: users && users.find(user=>user.id==='usr-3')?.available ? 'green' : 'gray',}}></div>
-            </p>
+            </div>
             <h5>{users.find(user=>user.id==='usr-3')?.name}   {orderedTickets['usr-3']?.length}</h5>
             </div>
             <div >
@@ -218,10 +218,10 @@ const Home = ({tickets, selectedGrouping, selectedOrdering, users}) => {
           <div className="group-column">
           <div className='group-header'>
             <div className='group-header-title'>
-            <p className="author" style={{backgroundColor: 'pink'}}>
+            <div className="author" style={{backgroundColor: 'pink'}}>
               {users?getInitials(users.find(user=>user.id==='usr-4')?.name):'U'}
               <div className='availability' style={{backgroundColor: users && users.find(user=>user.id==='usr-4')?.available ? 'green' : 'gray',}}></div>
-            </p>
+            </div>
             <h5>{users.find(user=>user.id==='usr-4')?.name}   {orderedTickets['usr-4']?.length}</h5>
             </div>
             <div >
@@ -238,10 +238,10 @@ const Home = ({tickets, selectedGrouping, selectedOrdering, users}) => {
           <div className="group-column">
           <div className='group-header'>
             <div className='group-header-title'>
-              <p className="author" style={{backgroundColor: 'red'}}>
+              <div className="author" style={{backgroundColor: 'red'}}>
               {users?getInitials(users.find(user=>user.id==='usr-5')?.name):'U'}
               <div className='availability' style={{backgroundColor: users && users.find(user=>user.id==='usr-5')?.available ? 'green' : 'gray',}}></div>
-            </p>
+            </div>
             <h5>{users.find(user=>user.id==='usr-5')?.name}   {orderedTickets['usr-5']?.length}</h5>
             </div>
             <div >

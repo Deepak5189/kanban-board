@@ -7,7 +7,7 @@ import medium from '../../assets/icons/medium.svg'
 import low from '../../assets/icons/low.svg'
 import no from '../../assets/icons/nopriority.svg'
 
-const Card = ({key, ticket, users}) => {
+const Card = ({ticket, users}) => {
   const priorities=[no, low, medium, high, urgent];
   const user=users.find((u)=>u.id===ticket.userId);
 
@@ -32,10 +32,10 @@ const Card = ({key, ticket, users}) => {
       <div className="card">
         <div className="header">
           <h6>{ticket.id}</h6>
-          <p className="author" style={{backgroundColor: profileColor[user.id]}}>
+          <div className="author" style={{backgroundColor: profileColor[user.id]}}>
             {user?getInitials(user.name):'U'}
             <div className='availability' style={{backgroundColor: user && user.available ? 'green' : 'gray',}}></div>
-          </p>
+          </div>
         </div>
         <div className='ticket-main'>
           <h4 className='ticket-title'>{ticket.title}</h4>
