@@ -10,8 +10,8 @@ function App() {
 
   const [tickets, setTickets]=useState([]);
   const [users, setUsers]=useState([]);
-  const [selectedOrdering, setSelectedOrdering]=useState('status');
-  const [selectedGrouping, setselectedGrouping]=useState('priority');
+  const [selectedOrdering, setSelectedOrdering]=useState('priority');
+  const [selectedGrouping, setselectedGrouping]=useState('status');
 
   
   useEffect(() => {
@@ -32,8 +32,10 @@ function App() {
         seterror(true)
       }finally{
         setLoading(false)
+        console.log(selectedGrouping, selectedOrdering);
       }
     }
+    localStorage.setItem('latestState', JSON.stringify({selectedGrouping, selectedOrdering}))
     fetchTickets();
   
   }, []);
@@ -44,11 +46,13 @@ function App() {
 
   useEffect(()=>{
     const newState=localStorage.getItem('latestState');
-     if(newState){
+     if(newState.selectedGrouping && newState.selectedOrdering){
+      console.log(newState)
       setselectedGrouping(newState.selectedGrouping);
       setSelectedOrdering(newState.selectedOrdering);
      }
   },[]);
+  console.log(selectedGrouping,selectedOrdering);
 
   if(loading){
     return (

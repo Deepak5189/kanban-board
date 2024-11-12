@@ -15,7 +15,7 @@ import medium from '../../assets/icons/medium.svg'
 import low from '../../assets/icons/low.svg'
 
 const Home = ({tickets, selectedGrouping, selectedOrdering, users}) => {
-
+  console.log(users,tickets,selectedGrouping,selectedOrdering);
   const groupTickets=(tickets, selectedGrouping)=>{
     switch(selectedGrouping){
       case 'status':
@@ -57,6 +57,7 @@ const Home = ({tickets, selectedGrouping, selectedOrdering, users}) => {
     result[group]=orderTickets(groupedTickets[group], selectedOrdering);
     return result;
   },{});
+  console.log(groupedTickets,orderedTickets);
 
   const getInitials=(username)=>{
     if(!username) return '';
