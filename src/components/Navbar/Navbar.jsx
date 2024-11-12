@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './Navbar.css'
 import displayIcon from '../../assets/icons/Display.svg'
-import downIcon from '../../assets/icons/Down.svg'
+import downIcon from '../../assets/icons/down.svg'
 
 const Navbar = ({selectedGrouping, selectedOrdering, setSelectedOrdering, setselectedGrouping}) => {
 
