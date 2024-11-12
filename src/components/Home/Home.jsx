@@ -3,7 +3,7 @@ import './Home.css'
 import Card from '../Card/Card';
 import add from '../../assets/icons/add.svg'
 import more from '../../assets/icons/more.svg'
-import backlog from '../../assets/icons/backlog.svg'
+import backlog from '../../assets/icons/Backlog.svg'
 import Cancelled from '../../assets/icons/Cancelled.svg'
 import Done from '../../assets/icons/Done.svg'
 import inprogress from '../../assets/icons/inprogress.svg'
