@@ -1,0 +1,55 @@
+.option-icon{
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+
+}
+.header-nav{
+  background-color: #ffffff;
+  min-width: 100vw;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.display-button{
+  display: flex;
+  align-items: center;
+  border: 2px solid #d2d2d2;
+  font-weight: 600;
+}
+
+.down-icon{
+  width: 24px;
+  height: 24px;
+  margin-left: 8px;
+}
+
+.selection-div{
+  position: absolute; 
+  z-index: 10;
+  min-width: 250px;
+  padding: 10px;
+  border: 2px solid #d2d2d2;
+  border-radius: 5px;
+  top: 60px;
+  left: 30px;
+  color: #7c7c7c;
+  background-color: #ffffff;
+}
+
+.selection-dropdown{
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.dropdown{
+  border: 2px solid #d2d2d2;
+  border-radius: 3px;
+  padding: 5px;
+  padding-right: 20px;
+  padding-left: 20px;
+}

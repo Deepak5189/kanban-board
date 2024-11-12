@@ -1,0 +1,71 @@
+.card{
+  max-width: 500px;
+  padding:  0;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #ffffff;
+  box-shadow: gray;
+  border-radius: 10px;
+  margin: 10px;
+  /* width: 250px; */
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  color: gray;
+}
+
+.header .author{
+  position: relative;
+  background-color: blue;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.availability{
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  outline: 3px solid #ffffff;
+}
+
+.ticket-main{
+  margin: 0;
+  padding: 0;
+}
+
+.ticket-title{
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  margin: 0;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 3em;
+}
+
+.footer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer .tag{
+  font-size: 14px;
+  color: gray;
+}
